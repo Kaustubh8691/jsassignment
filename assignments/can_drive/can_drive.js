@@ -1,5 +1,5 @@
 function CanDrive(hasDrivingLiscence, isTired, isSober) {
-    // Write you code here
+    // Write you code here 
     if (hasDrivingLiscence==false){
         return "You cannot drive";
 
