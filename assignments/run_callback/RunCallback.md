@@ -9,7 +9,7 @@ Instructions
 
 ```bash
 Example - let us assume the callback function just prints the argument passed
-Input - 3, 4, cb
+Input - 3, 4, cb 
 Output - 7
 
 Input - 5, 8, cb
