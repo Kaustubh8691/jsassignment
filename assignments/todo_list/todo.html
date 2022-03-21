@@ -2,46 +2,35 @@
     <head>
         <title>Todo List</title>
         <style>
-            .todos{
-                display: flex;
+            .addbutton{
+                height: 50px;
+                width: 100px;
             }
-            .completed{
-                display: inline-block;
-                width: 50%;
-                margin-top: 0px;
+            .input-div{
+                margin-left:10vw;
             }
-            .pending{
-                display: inline-block;
-                width: 49%;
+            #completed{
+                border: 1px solid green;
+                background-color: lightblue;
             }
-            span.colums {
-                display: inline-block;
-                width: 49%;
-                font-size: 20px;
-                font-weight: bold;
+            #pending{
+                border: 1px solid red;
+                background-color: lightblue;
             }
+           
         </style>
     </head>
     <body>
         <div class="input-div">
-            <input type='text' name='todo_input' class="input">
-            <button class="addbutton" type='submit'>Add Todo</button>
-            <button class="addbutton" type='submit'>completed</button>
-            <button class="addbutton" type='submit'>pending</button>
+            <!-- <input type='text' name='todo_input' class="input"> -->
+            <button class="addbutton" id="btn1" type='submit'>All task</button>
+            <button class="addbutton" id="btn2" type='submit'>completed</button>
+            <button class="addbutton" id="btn3" type='submit'>pending</button>
 
-            <header class="status">
-                <span class="colums">
-                    completed
-                </span>
-                <span class="colums">
-                    pending
-                </span>
-            </header>
-            <div class='todos'>
-                <div class="completed"></div>
-                <div class="pending"></div>
-                <!-- Data come from user input -->
-            </div>
+           
+            <div id="completed"></div>
+            <div id="pending"></div>
+            <div id='todos'></div>
         </div>
         <div class="button-remove"><a class="remove-button" onclick="removeAll()">Remove All</a></div>
     </body>
