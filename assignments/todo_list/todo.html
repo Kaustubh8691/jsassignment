@@ -1,13 +1,38 @@
 <html>
     <head>
         <title>Todo List</title>
+        <style>
+            .addbutton{
+                height: 50px;
+                width: 100px;
+            }
+            .input-div{
+                margin-left:10vw;
+            }
+            #completed{
+                border: 1px solid green;
+                background-color: lightblue;
+            }
+            #pending{
+                border: 1px solid red;
+                background-color: lightblue;
+            }
+           
+        </style>
     </head>
     <body>
-        <div>
-            <input type='text' name='todo_input'>
-            <button type='submit'>Add Todo</button>
-            <div class='todos'></div>
+        <div class="input-div">
+            <!-- <input type='text' name='todo_input' class="input"> -->
+            <button class="addbutton" id="btn1" type='submit'>All task</button>
+            <button class="addbutton" id="btn2" type='submit'>completed</button>
+            <button class="addbutton" id="btn3" type='submit'>pending</button>
+
+           
+            <div id="completed"></div>
+            <div id="pending"></div>
+            <div id='todos'></div>
         </div>
+        <div class="button-remove"><a class="remove-button" onclick="removeAll()">Remove All</a></div>
     </body>
     <script src='./script.js'></script>
 </html>
